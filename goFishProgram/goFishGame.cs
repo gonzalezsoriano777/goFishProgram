@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace goFishProgram
 {
-    class Program
+    public class goFishGame
     {
-        static void Main(string[] args)
+        public void Game()
         {
 
         }
