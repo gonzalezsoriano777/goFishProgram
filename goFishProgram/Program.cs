@@ -10,8 +10,8 @@ namespace goFishProgram
     {
         static void Main(string[] args)
         {
-           
-            
+
+            gameDeck randomizer = new gameDeck();
 
         }
     }

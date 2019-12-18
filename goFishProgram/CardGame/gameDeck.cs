@@ -5,17 +5,29 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace goFishProgram
-{
+{ 
+    public enum cardFaceValues { Ace = 1, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, King, Queen };
+    public enum cardSuits { Dolp, Sharks, Orcas, Meg };
+
     public class gameDeck
     {
-        enum cardSuits { Sharks = 0, Dolph = 1, Levi = 2, Meg = 3 }; 
+        public cardFaceValues faceValue { get; set; }
+        public cardSuits cardSuit { get; set; }
+
+        public override string ToString()
+        {
+            return faceValue + "of a" + cardSuit;
+        }
 
         public gameDeck()
         {
-            Random cardDeck = new Random();
-            var value = cardDeck.Next(0, 52);
-            Console.WriteLine(value);
-            cardSuits randomSuit = (cardSuits)new Random().Next(0, 3);
+
+        }
+        
+        public gameDeck(cardFaceValues value, cardSuits suit)
+        {
+            this.faceValue = value;
+            this.cardSuit = suit;
         }
     }
 }
