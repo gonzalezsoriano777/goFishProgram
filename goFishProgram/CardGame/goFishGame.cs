@@ -6,10 +6,14 @@ using System.Threading.Tasks;
 
 namespace goFishProgram
 {
-    public class goFishGame
+    public class goFishGame : gameDeck
     {
+        public int humanOne;
+        public int humanTwo;
+
         public void Game()
         {
+            
 
         }
     }
